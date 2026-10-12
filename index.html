@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francis A. Delos Reyes | IT Support Specialist & Developer Portfolio</title>
+  <meta name="description" content="Professional portfolio of Francis A. Delos Reyes - IT Support Specialist, Network & Hardware Troubleshooter, and Web Developer." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome 6 CDN for Tech & UI Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Glow Effect -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span>FDR</span><span class="dot">.</span><span style="font-size: 0.85rem; font-weight: 500; color: var(--text-muted); margin-left: 0.4rem;">IT Specialist</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Credentials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       SECTION 1: HERO SECTION
+       Unique Animation: Typewriter Headline + Floating Circuit Badges & Terminal
+       ========================================================================= -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-pulse"></span>
+            <span>Available for IT Support & Tech Roles</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Francis A. Delos Reyes</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>Specializing in</span>
+            <span class="typewriter-text" id="typewriter">IT Support Specialist</span>
+          </div>
+
+          <p class="hero-description">
+            Motivated and detail-oriented IT professional with hands-on experience in computer and network troubleshooting, asset inventory management, hospital infrastructure support, and full-cycle database and web systems.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="assets/Francis_A_Delos_Reyes_Resume.pdf" download="Francis_A_Delos_Reyes_Resume.pdf" class="btn btn-primary" target="_blank">
+              <i class="fas fa-file-arrow-down"></i> Download CV
+            </a>
+            <a href="#experience" class="btn btn-outline">
+              <i class="fas fa-briefcase"></i> View Experience
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <i class="fas fa-laptop-code"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Get in Touch
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>6x</h3>
+              <p>Dean's Lister</p>
+            </div>
+            <div class="stat-item">
+              <h3>2+</h3>
+              <p>IT Roles Held</p>
+            </div>
+            <div class="stat-item">
+              <h3>CompTIA</h3>
+              <p>A+ Part I CPD</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual: Profile Portrait with Ambient Tech Blend -->
+        <div class="hero-visual">
+          <div class="hero-portrait-wrapper">
+            <!-- Pulsing ambient glow aura -->
+            <div class="hero-portrait-aura" aria-hidden="true"></div>
+
+            <!-- Portrait Frame with Smooth Edge & Background Blend -->
+            <div class="hero-portrait-card">
+              <div class="portrait-img-wrap">
+                <img src="assets/profile.jpg" alt="Francis A. Delos Reyes - IT Support Specialist" class="portrait-img" />
+                <div class="portrait-blend-overlay" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 2: ABOUT / PROFESSIONAL SUMMARY
+       Unique Animation: Radar Scanner Line + Interactive Tech Capability Grid
+       ========================================================================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-user-astronaut"></i> Professional Profile</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A synthesis of technical problem solving, system maintenance, and user-centric digital tools.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Bio & Highlights Card -->
+        <div class="about-bio-card">
+          <div class="card-inner-top">
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">
+              Empowering Operations Through Dependable IT Solutions
+            </h3>
+            <p class="about-bio-text">
+              Motivated and detail-oriented individual with a strong interest in technology and digital systems. Skilled in creating organized, user-focused projects such as e-commerce platforms and e-portfolios. Eager to apply technical knowledge, learn new skills, and contribute effectively in a professional environment.
+            </p>
+            <p class="about-bio-text">
+              With proven background in both hospital IT infrastructure and corporate IT asset management, I bridge hands-on equipment reliability with software proficiency in PHP, MySQL, Python, and modern AI productivity workflows.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <i class="fas fa-tools highlight-icon"></i>
+              <div class="highlight-title">Hardware & Peripherals</div>
+              <div class="highlight-desc">Maintenance, setup, component replacement</div>
+            </div>
+            <div class="highlight-box">
+              <i class="fas fa-ethernet highlight-icon"></i>
+              <div class="highlight-title">Network Troubleshooting</div>
+              <div class="highlight-desc">Connectivity checks & infrastructure support</div>
+            </div>
+            <div class="highlight-box">
+              <i class="fas fa-boxes-stacked highlight-icon"></i>
+              <div class="highlight-title">Asset Inventory</div>
+              <div class="highlight-desc">Lifecycle tracking, records, and transfers</div>
+            </div>
+            <div class="highlight-box">
+              <i class="fas fa-database highlight-icon"></i>
+              <div class="highlight-title">System & Web Dev</div>
+              <div class="highlight-desc">PHP, MySQL, and automated tools</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Diagnostic Specification Window -->
+        <div class="diagnostic-window">
+          <div class="scanner-bar" aria-hidden="true"></div>
+          <div>
+            <div class="diagnostic-header">
+              <div class="diagnostic-title">
+                <span class="live-indicator"></span>
+                <span>CORE SPECIFICATIONS // PROFILE</span>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">STATUS: ACTIVE</span>
+            </div>
+
+            <div class="diag-specs-list">
+              <div class="spec-row">
+                <div class="spec-key"><i class="fas fa-id-badge" style="color: var(--accent-cyan);"></i> Full Name</div>
+                <div class="spec-val">Francis A. Delos Reyes</div>
+              </div>
+              <div class="spec-row">
+                <div class="spec-key"><i class="fas fa-laptop-medical" style="color: var(--accent-indigo);"></i> Core Role</div>
+                <div class="spec-val">IT Support Specialist</div>
+              </div>
+              <div class="spec-row">
+                <div class="spec-key"><i class="fas fa-location-dot" style="color: var(--accent-emerald);"></i> Location</div>
+                <div class="spec-val">Dasmariñas City, Cavite</div>
+              </div>
+              <div class="spec-row">
+                <div class="spec-key"><i class="fas fa-graduation-cap" style="color: var(--accent-amber);"></i> Degree</div>
+                <div class="spec-val">BS Information Technology</div>
+              </div>
+              <div class="spec-row">
+                <div class="spec-key"><i class="fas fa-award" style="color: var(--accent-cyan);"></i> Academic Standing</div>
+                <div class="spec-val">Dean's Lister (6 Semesters)</div>
+              </div>
+              <div class="spec-row">
+                <div class="spec-key"><i class="fas fa-certificate" style="color: var(--accent-indigo);"></i> Key Certification</div>
+                <div class="spec-val">CompTIA A+ 1000 - Part I</div>
+              </div>
+              <div class="spec-row">
+                <div class="spec-key"><i class="fas fa-envelope" style="color: var(--accent-emerald);"></i> Primary Email</div>
+                <div class="spec-val">f.dreyes0407@gmail.com</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="diagnostic-footer-badge">
+            <span class="status-pulse"></span>
+            <span>Infrastructure • Systems Administration • Technical Support</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 3: PROFESSIONAL EXPERIENCE
+       Unique Animation: Illuminated Vertical Circuit Timeline with Scroll Progress
+       ========================================================================= -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-timeline"></i> Career Journey</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Real-world operational IT support, hospital infrastructure, and technical asset management.</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Vertical glowing circuit track -->
+        <div class="timeline-track">
+          <div class="timeline-track-glow"></div>
+        </div>
+
+        <!-- Experience 1: Rapid Technologies -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">IT Support Specialist</h3>
+                <div class="exp-company">
+                  <i class="fas fa-building"></i> Rapid Technologies
+                </div>
+              </div>
+              <span class="exp-period">
+                <i class="far fa-calendar-alt"></i> Apr 2026 - Sept 2026
+              </span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Managed company IT asset inventory by tracking equipment assignments, status, and records, ensuring accurate and up-to-date asset information.</li>
+              <li>Maintained computers, laptops, peripherals, and other IT equipment through regular inspection and documentation, improving asset organization and accountability.</li>
+              <li>Updated asset records and documentation for equipment transfers, replacements, and returns, supporting efficient inventory management.</li>
+              <li>Resolved basic hardware and software issues related to company IT assets, reducing delays in employee workflows.</li>
+              <li>Coordinated with employees and internal teams regarding asset requests and concerns, ensuring timely resolution of IT-related needs.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span class="exp-tag">IT Asset Inventory</span>
+              <span class="exp-tag">Hardware Maintenance</span>
+              <span class="exp-tag">Documentation & Records</span>
+              <span class="exp-tag">Employee Technical Support</span>
+              <span class="exp-tag">Workflow Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: General Trias Doctors Medical Center -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">IT Support & Network Internship</h3>
+                <div class="exp-company">
+                  <i class="fas fa-hospital"></i> City of General Trias Doctors Medical Center Inc.
+                </div>
+              </div>
+              <span class="exp-period">
+                <i class="far fa-calendar-alt"></i> Feb 2026 - May 2026
+              </span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Conducted basic network troubleshooting including connectivity checks, issue identification, and resolving common network-related concerns.</li>
+              <li>Assisted in network management and maintenance of hospital IT infrastructure to ensure reliable connectivity and system operations.</li>
+              <li>Performed hardware maintenance and troubleshooting for computer units, peripherals, and other IT equipment within the facility.</li>
+              <li>Provided technical support during hospital events, assisting with setup, equipment preparation, and on-site IT assistance.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span class="exp-tag">Hospital IT Infrastructure</span>
+              <span class="exp-tag">Network Troubleshooting</span>
+              <span class="exp-tag">System Connectivity Checks</span>
+              <span class="exp-tag">Computer Unit Diagnostics</span>
+              <span class="exp-tag">On-Site Event Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 4: SKILLS & COMPETENCIES
+       Unique Animation: Category Switcher + Animated Energy Meters
+       ========================================================================= -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-microchip"></i> Capabilities</div>
+        <h2 class="section-title">Technical Skills & Tools</h2>
+        <p class="section-subtitle">Core IT diagnostics, systems administration, development languages, and automation software.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="skills-filter-nav">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="support">IT Support & Network</button>
+        <button class="filter-btn" data-filter="dev">Development & Database</button>
+        <button class="filter-btn" data-filter="tools">Productivity & AI Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. Network Troubleshooting -->
+        <div class="skill-card" data-category="support">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fas fa-network-wired"></i></div>
+            <span class="skill-badge">Support</span>
+          </div>
+          <h4 class="skill-name">Network Troubleshooting</h4>
+          <p class="skill-desc">Connectivity verification, subnet testing, ping/latency diagnostics, and router/switch issue resolution.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="92%"></div>
+          </div>
+        </div>
+
+        <!-- 2. Computer Troubleshooting -->
+        <div class="skill-card" data-category="support">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fas fa-screwdriver-wrench"></i></div>
+            <span class="skill-badge">Hardware</span>
+          </div>
+          <h4 class="skill-name">Computer Troubleshooting</h4>
+          <p class="skill-desc">Desktop & laptop repairs, peripheral setup, component replacement, OS diagnostics, and performance optimization.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="95%"></div>
+          </div>
+        </div>
+
+        <!-- 3. IT Asset Management -->
+        <div class="skill-card" data-category="support">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fas fa-boxes-stacked"></i></div>
+            <span class="skill-badge">Inventory</span>
+          </div>
+          <h4 class="skill-name">IT Asset & Inventory Management</h4>
+          <p class="skill-desc">Tracking equipment assignments, maintenance logs, replacement cycles, transfers, and accountability reporting.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="90%"></div>
+          </div>
+        </div>
+
+        <!-- 4. PHP -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fab fa-php"></i></div>
+            <span class="skill-badge">Backend</span>
+          </div>
+          <h4 class="skill-name">PHP</h4>
+          <p class="skill-desc">Server-side scripting, MVC backend logic, RESTful session handling, authentication, and e-commerce CRUD systems.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="86%"></div>
+          </div>
+        </div>
+
+        <!-- 5. MySQL -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
+            <span class="skill-badge">Database</span>
+          </div>
+          <h4 class="skill-name">MySQL</h4>
+          <p class="skill-desc">Relational schema design, normalization, query optimization, foreign keys, indexing, and backup integrity.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="88%"></div>
+          </div>
+        </div>
+
+        <!-- 6. Python -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fab fa-python"></i></div>
+            <span class="skill-badge">Programming</span>
+          </div>
+          <h4 class="skill-name">Python</h4>
+          <p class="skill-desc">Scripting for task automation, data manipulation, file processing, and algorithmic problem solving.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="80%"></div>
+          </div>
+        </div>
+
+        <!-- 7. Microsoft Excel -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fas fa-file-excel"></i></div>
+            <span class="skill-badge">Data Analysis</span>
+          </div>
+          <h4 class="skill-name">Microsoft Excel</h4>
+          <p class="skill-desc">Advanced formulas (VLOOKUP/XLOOKUP), pivot tables, asset inventory databases, and statistical data organization.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="90%"></div>
+          </div>
+        </div>
+
+        <!-- 8. Zapier -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fas fa-bolt"></i></div>
+            <span class="skill-badge">Automation</span>
+          </div>
+          <h4 class="skill-name">Zapier</h4>
+          <p class="skill-desc">Connecting web apps, creating automated multi-step triggers, email notifications, and cross-platform sync pipelines.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="82%"></div>
+          </div>
+        </div>
+
+        <!-- 9. Claude & AI Tools -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fas fa-brain"></i></div>
+            <span class="skill-badge">AI Systems</span>
+          </div>
+          <h4 class="skill-name">Claude & AI Productivity Tools</h4>
+          <p class="skill-desc">Utilizing generative AI for automated code debugging, prompt engineering, technical documentation, and IT issue triage.</p>
+          <div class="skill-meter-wrap">
+            <div class="skill-meter-fill" data-level="92%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 5: PROJECTS
+       Unique Animation: 3D Mouse Tilt + Hover Feature Revealer
+       ========================================================================= -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-code-branch"></i> Portfolio Works</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Realized software systems addressing community management and responsive e-commerce retail.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: BarangayHub -->
+        <div class="project-card">
+          <div class="project-banner-decor"></div>
+          <div>
+            <div class="project-top">
+              <span class="project-badge"><i class="fas fa-users"></i> Community Web System</span>
+              <span class="project-date">May 2025 - May 2026</span>
+            </div>
+
+            <h3 class="project-title">BarangayHub: Management Information System</h3>
+            <p class="project-desc">
+              A comprehensive civic information system developed to digitize and expedite daily operations for community residents and local barangay officials. Designed to improve transparency, communication, and public administrative speed.
+            </p>
+
+            <div class="project-features-list">
+              <div class="features-heading">
+                <i class="fas fa-check-double"></i> Core Implemented Features
+              </div>
+              <ul class="features-items">
+                <li><i class="fas fa-check-circle"></i> Anonymous incident reporting module for citizen safety</li>
+                <li><i class="fas fa-check-circle"></i> Digital request portal for barangay clearances & permits</li>
+                <li><i class="fas fa-check-circle"></i> Appointment scheduling system with date reservations</li>
+                <li><i class="fas fa-check-circle"></i> Community bulletin board for official announcements</li>
+                <li><i class="fas fa-check-circle"></i> Resident profiling database & statistical report generation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="project-tech-stack">
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Role-Based Access</span>
+            </div>
+
+            <div class="project-footer">
+              <span style="font-size: 0.85rem; color: var(--text-dim);"><i class="fas fa-laptop"></i> Full Stack Web Application</span>
+              <a href="#contact" class="btn btn-outline btn-sm">Inquire Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Anta Footwear -->
+        <div class="project-card">
+          <div class="project-banner-decor"></div>
+          <div>
+            <div class="project-top">
+              <span class="project-badge"><i class="fas fa-shopping-bag"></i> E-Commerce Platform</span>
+              <span class="project-date">Feb 2024 - Apr 2024</span>
+            </div>
+
+            <h3 class="project-title">Anta Footwear: E-commerce Website</h3>
+            <p class="project-desc">
+              A dynamic, mobile-responsive online retail store designed for shoe browsing, real-time inventory checking, and order fulfillment. Built with focused user experience and efficient back-office inventory control.
+            </p>
+
+            <div class="project-features-list">
+              <div class="features-heading">
+                <i class="fas fa-check-double"></i> Core Implemented Features
+              </div>
+              <ul class="features-items">
+                <li><i class="fas fa-check-circle"></i> Responsive footwear catalog with search & category filters</li>
+                <li><i class="fas fa-check-circle"></i> Interactive shopping cart management with live totals</li>
+                <li><i class="fas fa-check-circle"></i> Secure user account registration, login, and profile tracking</li>
+                <li><i class="fas fa-check-circle"></i> Real-time inventory tracking and product management dashboard</li>
+                <li><i class="fas fa-check-circle"></i> Customer order status tracking from checkout to shipment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="project-tech-stack">
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Cart Logic</span>
+              <span class="tech-pill">Responsive Design</span>
+              <span class="tech-pill">Inventory Management</span>
+            </div>
+
+            <div class="project-footer">
+              <span style="font-size: 0.85rem; color: var(--text-dim);"><i class="fas fa-store"></i> Retail E-Commerce System</span>
+              <a href="#contact" class="btn btn-outline btn-sm">Inquire Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 6: CERTIFICATIONS & EDUCATION
+       Unique Animation: Holographic Shimmer Sweep + Academic Seal Levitation
+       ========================================================================= -->
+  <section id="certifications" class="cert-edu-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-award"></i> Verification</div>
+        <h2 class="section-title">Certifications & Education</h2>
+        <p class="section-subtitle">Verified professional credentials and recognized academic honors in Information Technology.</p>
+      </div>
+
+      <div class="cert-edu-grid">
+        <!-- Left: Certifications -->
+        <div>
+          <h3 class="cert-column-title">
+            <i class="fas fa-stamp" style="color: var(--accent-amber);"></i> Professional Certifications
+          </h3>
+          <div class="cert-list">
+            <!-- Cert 1: CompTIA A+ -->
+            <div class="cert-card">
+              <div class="cert-icon-seal">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="cert-info">
+                <h4>CompTIA A+ 1000 - Part I</h4>
+                <div class="cert-issuer">CPD Certified</div>
+                <div class="cert-date"><i class="far fa-calendar-check"></i> Issued August 2026</div>
+              </div>
+            </div>
+
+            <!-- Cert 2: Windows 11 IT Support -->
+            <div class="cert-card">
+              <div class="cert-icon-seal" style="background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3); color: var(--accent-cyan);">
+                <i class="fab fa-windows"></i>
+              </div>
+              <div class="cert-info">
+                <h4>Windows 11 for IT Support: Troubleshooting Basics</h4>
+                <div class="cert-issuer">LinkedIn Learning</div>
+                <div class="cert-date"><i class="far fa-calendar-check"></i> Issued August 2026</div>
+              </div>
+            </div>
+
+            <!-- Cert 3: Professional Networking -->
+            <div class="cert-card">
+              <div class="cert-icon-seal" style="background: rgba(99, 102, 241, 0.12); border-color: rgba(99, 102, 241, 0.3); color: var(--accent-indigo);">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <div class="cert-info">
+                <h4>Professional Networking</h4>
+                <div class="cert-issuer">LinkedIn Learning</div>
+                <div class="cert-date"><i class="far fa-calendar-check"></i> Issued June 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Education -->
+        <div>
+          <h3 class="edu-column-title">
+            <i class="fas fa-graduation-cap" style="color: var(--accent-cyan);"></i> Education History
+          </h3>
+          <div class="edu-list">
+            <!-- College -->
+            <div class="edu-card">
+              <div class="edu-header">
+                <h4 class="edu-degree">Bachelor of Science in Information Technology</h4>
+                <span class="edu-period">Sep 2022 - Aug 2026</span>
+              </div>
+              <div class="edu-school">Cavite State University — Trece Martires City Campus</div>
+              <div class="edu-honor-badge">
+                <i class="fas fa-medal"></i> Dean's Lister (6 Semesters)
+              </div>
+            </div>
+
+            <!-- Senior High -->
+            <div class="edu-card">
+              <div class="edu-header">
+                <h4 class="edu-degree">Senior High School — STEM Strand</h4>
+                <span class="edu-period">Aug 2020 - July 2022</span>
+              </div>
+              <div class="edu-school">Philippine Christian University — Cavite</div>
+              <div class="edu-honor-badge" style="background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.3); color: var(--accent-amber);">
+                <i class="fas fa-award"></i> Graduated with High Honor
+              </div>
+            </div>
+
+            <!-- Academic Distinctions -->
+            <div class="edu-card">
+              <div class="edu-header">
+                <h4 class="edu-degree">Academic Honors & Distinctions</h4>
+                <span class="edu-period">2022 - 2026</span>
+              </div>
+              <div class="edu-school">Cavite State University & PCU Recognitions</div>
+              <div class="edu-honor-badge" style="background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3); color: var(--accent-cyan);">
+                <i class="fas fa-trophy"></i> Consistent Academic Excellence Awardee
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 7: CONTACT & CONNECT
+       Unique Animation: Interactive Pulse Communication Hub + One-Click Clipboard
+       ========================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fas fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title">Contact & Communication</h2>
+        <p class="section-subtitle">Interested in collaborating or discussing an IT Support / Developer opportunity? Reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-card">
+          <p class="contact-intro">
+            I am available for on-site, hybrid, or remote IT positions in Cavite, Metro Manila, and surrounding regions. Feel free to copy my details or send a message directly.
+          </p>
+
+          <div class="contact-channels">
+            <!-- Email -->
+            <div class="channel-item">
+              <div class="channel-main">
+                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                <div class="channel-meta">
+                  <h5>Email Address</h5>
+                  <p><a href="mailto:f.dreyes0407@gmail.com" style="color: inherit; text-decoration: none;">f.dreyes0407@gmail.com</a></p>
+                </div>
+              </div>
+              <button class="channel-copy-btn copy-trigger" data-copy="f.dreyes0407@gmail.com" title="Copy Email">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="channel-item">
+              <div class="channel-main">
+                <div class="channel-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1);"><i class="fas fa-phone"></i></div>
+                <div class="channel-meta">
+                  <h5>Phone Number</h5>
+                  <p><a href="tel:09162068879" style="color: inherit; text-decoration: none;">09162068879</a></p>
+                </div>
+              </div>
+              <button class="channel-copy-btn copy-trigger" data-copy="09162068879" title="Copy Phone">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- Location -->
+            <div class="channel-item">
+              <div class="channel-main">
+                <div class="channel-icon" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.1);"><i class="fas fa-location-dot"></i></div>
+                <div class="channel-meta">
+                  <h5>Location</h5>
+                  <p>Dasmariñas City, Cavite, Philippines</p>
+                </div>
+              </div>
+              <button class="channel-copy-btn copy-trigger" data-copy="Dasmariñas City, Cavite" title="Copy Location">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- Professional Reference from Resume -->
+          <div class="reference-card">
+            <div class="ref-tag"><i class="fas fa-user-check"></i> Professional Reference</div>
+            <div class="ref-name">Randolph Ibañez Ricafort</div>
+            <div class="ref-details">Team Leader — Rapid Technologies, Inc.</div>
+            <div class="ref-details" style="font-family: var(--font-mono); margin-top: 0.25rem;">
+              <i class="fas fa-phone-alt" style="font-size: 0.75rem;"></i> +63 966 815 5527
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--text-main);">
+            <i class="fas fa-comment-dots" style="color: var(--accent-cyan); margin-right: 0.4rem;"></i> Send a Direct Message
+          </h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Hiring Manager / Recruiter" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="name@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="IT Support Role / Project Inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Hello Francis, I'd like to talk regarding..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        &copy; 2026 <strong>Francis A. Delos Reyes</strong>. IT Support Specialist & Information Technology Graduate.
+      </div>
+      <a href="#hero" class="back-to-top">
+        <i class="fas fa-arrow-up"></i> Back to Top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMsg">Action completed successfully</span>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
